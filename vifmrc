@@ -139,6 +139,8 @@ bmark! ~/Applications/ applications
 " %D the other window directory name.
 " %m run the command in a menu window
 
+command! dotnet !dotnet %a
+command! git !!git %a
 command! lf !lf
 command! link ! ln -s %c %D
 command! live !live-server
@@ -146,6 +148,7 @@ command! pb !! cat %c | pb
 command! diff ! git difftool -y %c
 command! gitsync !! gitsync
 command! gitui ! gitui
+command! gitpush !! git push
 command! syncall !! syncall
 command! df df -h %m 2> /dev/null
 command! diff nvim -d %f %F
