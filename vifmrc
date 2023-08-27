@@ -174,7 +174,13 @@ command! open !! open %c
 command! xdgopen !! xdg-open %c
 command! unarchive !! unarchive %c
 command! icat !! kitty +kitten icat %c
-command! venv ! python -m venv %a
+command! bash !bash 
+command! py !python %f
+command! addall !git add .
+command! commit !git commit
+command! push !git push
+command! pull !git pull
+command! Clone !gh repo clone %a
 
 " ------------------------------------------------------------------------------
 
