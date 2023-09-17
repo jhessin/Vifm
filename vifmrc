@@ -116,11 +116,11 @@ set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
 
 " :mark mark /full/directory/path [filename]
 
-bmark! ~/source/repos/ github
-bmark! ~/source/repos/notes/content/ notes
-bmark! ~/source/repos/records records
+bmark! ~/repos/ github
+bmark! ~/repos/notes/content/ notes
+bmark! ~/repos/records records
 bmark! ~ home
-bmark! ~/.local/bin/ bin
+bmark! ~/bin/ bin
 bmark! ~/.config/ configs
 bmark! ~/Downloads/ downloads
 bmark! ~/Applications/ applications
@@ -146,9 +146,6 @@ command! link ! ln -s %c %D
 command! live !live-server
 command! pb !! cat %c | pb
 command! diff ! git difftool -y %c
-command! gitsync !! gitsync
-command! gitui ! gitui
-command! gitpush !! git push
 command! syncall !! syncall
 command! df df -h %m 2> /dev/null
 command! diff nvim -d %f %F
@@ -177,6 +174,7 @@ command! icat !! kitty +kitten icat %c
 command! bash !bash 
 command! py !python %f
 command! addall !git add .
+command! status !!git status
 command! commit !git commit
 command! push !git push
 command! pull !git pull
@@ -515,7 +513,6 @@ nnoremap mn :bmark<space>
 
 " Open editor to edit vifmrc and apply settings after returning to vifm
 nnoremap ,c :write | edit $MYVIFMRC | restart<cr>
-nnoremap ,g :!gitui<cr>
 " Open nvim to edit vifmrc
 nnoremap ,C :config
 
