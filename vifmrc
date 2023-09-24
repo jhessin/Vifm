@@ -116,11 +116,7 @@ set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
 
 " :mark mark /full/directory/path [filename]
 
-bmark! ~/repos/ github
-bmark! ~/repos/notes/content/ notes
-bmark! ~/repos/records records
 bmark! ~ home
-bmark! ~/bin/ bin
 bmark! ~/.config/ configs
 bmark! ~/Downloads/ downloads
 bmark! ~/Applications/ applications
@@ -420,7 +416,7 @@ filextype */
 " For OS X:
 " filetype * open
 " For Windows:
-" filetype * start, explorer
+filetype * nvim, start, explorer
 
 " ------------------------------------------------------------------------------
 
@@ -447,7 +443,7 @@ filter /^(node_modules|yarn\.lock)/
 " Sample mappings
 
 " Start shell in current directory
-" nnoremap s :shell<cr>
+nnoremap s :shell<cr>
 "nnoremap q! :!tmux<cr>
 " nnoremap <cr> :!
 
