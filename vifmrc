@@ -470,10 +470,14 @@ filextype */
 filetype *
        \ {Edit in neovim}
        \ nvim %f,
-       \ {Open with windows}
-       \ explorer %"f &,
        \ {Edit in neovide}
        \ neovide %f,
+       \ {Open with windows}
+       \ explorer %"f &,
+       \ {Open in OS X}
+       \ open %f,
+       \ {Open in linux}
+       \ xdg-open %f,
 
 " ------------------------------------------------------------------------------
 " Panel configuration examples
