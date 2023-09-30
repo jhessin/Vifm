@@ -468,11 +468,12 @@ filextype */
 " filetype * open
 " For Windows:
 filetype *
+       \ {Edit in neovim}
+       \ nvim %f,
+       \ {Open with windows}
        \ explorer %"f &,
        \ {Edit in neovide}
        \ neovide %f,
-       \ {Edit in neovim}
-       \ nvim %f,
 
 " ------------------------------------------------------------------------------
 " Panel configuration examples
