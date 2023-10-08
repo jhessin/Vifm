@@ -469,7 +469,7 @@ filextype */
 " For Windows:
 filetype *
        \ {Edit in neovim}
-       \ nvim %f,
+       \ nvim "%f",
        \ {Edit in neovide}
        \ neovide %f,
        \ {Open with windows}
