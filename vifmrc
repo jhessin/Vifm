@@ -157,7 +157,7 @@ command! cargonew cargo new %a; cd %a; git ignore rust,cargo > .gitignore
 command! ghclone gh repo clone %a; cd %a
 command! zip zip -r %f.zip %f
 command! unzip unzip %f
-command! run !! ./%f
+command! run !! %f
 command! runwith !! ./%f %a
 command! make !!make %a
 command! mkcd :mkdir %a | cd %a
