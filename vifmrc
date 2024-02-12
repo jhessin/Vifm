@@ -159,6 +159,7 @@ command! zip zip -r %f.zip %f
 command! unzip unzip %f
 command! run !! %f
 command! runwith !! ./%f %a
+command! rg !! rg %a %f
 command! make !!make %a
 command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
