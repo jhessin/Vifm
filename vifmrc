@@ -14,6 +14,10 @@
 " you will need to change this setting.
 if executable('nvim')
     set vicmd=nvim
+elseif executable('goneovim')
+    set vicmd=goneovim
+elseif executable('nvim-qt')
+    set vicmd=nvim-qt
 elseif executable('vim')
     set vicmd=vim
 elseif executable('elvis')
@@ -471,6 +475,10 @@ filextype */
 filetype *
        \ {Edit in neovim}
        \ nvim "%f",
+       \ {Edit in goneovim}
+       \ goneovim "%f",
+       \ {Edit in neovim-qt}
+       \ nvim-qt "%f",
        \ {Edit in neovide}
        \ neovide %f,
        \ {Open with windows}
@@ -513,7 +521,7 @@ nnoremap w :view<cr>
 vnoremap w :view<cr>gv
 
 " Open file in existing instance of nvim
-nnoremap o :!nvim %f<cr>
+nnoremap o :!nvr --remote %f<cr>
 " Open file in new instance of nvim
 nnoremap O :!nvim %f<cr>
 
