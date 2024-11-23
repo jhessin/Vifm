@@ -145,6 +145,7 @@ bmark! ~/Applications/ applications
 "  %u uses command's output to build a file list
 "  see `:help vifm-macros` and `:help vifm-filename-modifiers` for more
 
+command! codium !codium .
 command! cmd !cmd
 command! pwsh !pwsh
 command! git !!git %a
@@ -179,7 +180,8 @@ command! open !! open %c
 command! xdgopen !! xdg-open %c
 command! unarchive !! unarchive %c
 command! icat !! kitty +kitten icat %c
-command! bash !bash 
+command! bash !bash %a
+command! bashrun !bash %c
 command! cmd !cmd
 command! pwsh !pwsh
 command! py !python %f
