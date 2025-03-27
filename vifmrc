@@ -176,7 +176,7 @@ command! sudo !! sudo ./%c
 command! tsnode !! yarn ts-node %c
 command! dart !! dart %c
 command! node !! node %c
-command! open !! open %c
+" command! open !! open %c
 command! xdgopen !! xdg-open %c
 command! unarchive !! unarchive %c
 command! icat !! kitty +kitten icat %c
