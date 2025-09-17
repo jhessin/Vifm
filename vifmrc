@@ -153,10 +153,10 @@ command! lf !lf
 command! link ! ln -s %c %D
 command! live !live-server
 command! pb !! cat %c | pb
-command! diff ! git difftool -y %c
+command! diff nvim -d %f %F
+command! gdiff ! git difftool -y %c
 command! syncall !! syncall
 command! df df -h %m 2> /dev/null
-command! diff nvim -d %f %F
 command! tig tig
 command! cargonew cargo new %a; cd %a; git ignore rust,cargo > .gitignore
 command! ghclone gh repo clone %a; cd %a
