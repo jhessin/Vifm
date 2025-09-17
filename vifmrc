@@ -123,7 +123,8 @@ colorscheme Default Default-256
 bmark! ~ home
 bmark! ~/.config/ configs
 bmark! ~/Downloads/ downloads
-bmark! ~/Applications/ applications
+bmark! ~/AppData/ appdata
+bmark! /Users/Public/ Public
 
 " ------------------------------------------------------------------------------
 " Commands
