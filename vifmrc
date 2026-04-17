@@ -146,6 +146,8 @@ bmark! /Users/Public/ Public
 "  %u uses command's output to build a file list
 "  see `:help vifm-macros` and `:help vifm-filename-modifiers` for more
 
+command! pdfx !"C:\Program Files\Tracker Software\PDF Editor\PDFXEdit.exe" %"f &,
+command! ex !explorer %"f &,
 command! codium !codium .
 command! cmd !cmd
 command! pwsh !pwsh
@@ -161,8 +163,8 @@ command! df df -h %m 2> /dev/null
 command! tig tig
 command! cargonew cargo new %a; cd %a; git ignore rust,cargo > .gitignore
 command! ghclone gh repo clone %a; cd %a
-command! zip zip -r %f.zip %f
-command! unzip unzip %f
+command! zip zip -r %"f.zip %"f
+command! unzip unzip %"f
 command! run !! %f
 command! runwith !! ./%f %a
 command! rg !! rg %a %f
