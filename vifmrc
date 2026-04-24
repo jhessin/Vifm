@@ -478,6 +478,8 @@ filextype */
 " filetype * open
 " For Windows:
 filetype *
+       \ {Open with windows}
+       \ explorer %"f &,
        \ {Edit in neovim}
        \ nvim "%f",
        \ {Edit in goneovim}
@@ -486,8 +488,6 @@ filetype *
        \ nvim-qt "%f",
        \ {Edit in neovide}
        \ neovide %f,
-       \ {Open with windows}
-       \ explorer %"f &,
        \ {Open in OS X}
        \ open %f,
        \ {Open in linux}
