@@ -43,6 +43,8 @@ set syscalls
 " This probably shouldn't be an option.
 set trash
 
+" set trashdir+=//192.168.10.204/CMCST-CSG01/_TRASHES
+
 " What should be saved automatically on restarting vifm.  Drop "savedirs"
 " value if you don't want vifm to remember last visited directories for you.
 set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
@@ -124,7 +126,6 @@ bmark! ~ home
 bmark! ~/.config/ configs
 bmark! ~/Downloads/ downloads
 bmark! ~/AppData/ appdata
-bmark! /Users/Public/ Public
 
 " ------------------------------------------------------------------------------
 " Commands
@@ -617,3 +618,9 @@ nnoremap z. :set dotfiles!<cr>
 "     vifm --server-name "$VIFM_SERVER_NAME" --remote +"cd '$PWD'"
 "
 " let $VIFM_SERVER_NAME = v:servername
+"
+" This opens VIFM in a horizontally split window.
+sp
+
+" This opens VIFM in a single window
+" only
