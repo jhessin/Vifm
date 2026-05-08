@@ -148,6 +148,7 @@ bmark! ~/AppData/ appdata
 "  see `:help vifm-macros` and `:help vifm-filename-modifiers` for more
 
 command! pdfx !"C:\Program Files\Tracker Software\PDF Editor\PDFXEdit.exe" %"f &,
+command! lg !lazygit
 command! ex !explorer %"f &,
 command! codium !codium .
 command! cmd !cmd
