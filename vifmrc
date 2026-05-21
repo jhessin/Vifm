@@ -572,6 +572,7 @@ nnoremap A cw
 " Bookmarking easier
 nnoremap mm :bmarks<cr>
 nnoremap mn :bmark<space>
+nnoremap mc :bmark current<cr>
 
 " Open console in current directory
 " Not using tmux anymore
