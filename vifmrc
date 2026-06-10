@@ -111,7 +111,7 @@ if !has('win')
 endif
 
 " Set the mouse mode
-set mouse=nm
+" set mouse=nm
 
 " Set custom status line look
 set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
@@ -472,7 +472,7 @@ filextype */
         \ Thunar %f &,
 
 " Spreadsheets and the like
-filetype {*.xlsx,*.pdf,*.xlsm}
+filetype {*.xlsx,*.pdf,*.xlsm,*.dwf}
        \ {Open with windows}
        \ explorer %"f &,
        \ {Edit in neovim}
