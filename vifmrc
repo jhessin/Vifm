@@ -117,7 +117,7 @@ endif
 set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
 
 " List of color schemes to try (picks the first one supported by the terminal)
-colorscheme Default Default-256 
+colorscheme kanagawa-dragon Default Default-256 
 
 " ------------------------------------------------------------------------------
 " Bookmarks
