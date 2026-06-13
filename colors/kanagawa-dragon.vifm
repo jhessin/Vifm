@@ -1,0 +1,33 @@
+" ~/.config/vifm/colors/kanagawa-dragon.vifm
+
+highlight clear
+
+" Main window
+highlight Win          ctermfg=252 ctermbg=234
+
+" Cursor line
+highlight CurrLine     ctermbg=236
+
+" Top bar
+highlight TopLine      ctermfg=223 ctermbg=236
+
+" Status line
+highlight StatusLine   ctermfg=223 ctermbg=236
+
+" Borders
+highlight Border       ctermfg=238 ctermbg=234
+
+" Selection
+highlight Selected     ctermbg=238
+
+" File types
+highlight Directory    ctermfg=109
+highlight Link         ctermfg=110
+highlight BrokenLink   ctermfg=167
+highlight Executable   ctermfg=108
+highlight Device       ctermfg=173
+highlight Fifo         ctermfg=180
+highlight Socket       ctermfg=175
+
+" Errors (this one should exist; if it errors, just delete it)
+highlight ErrorMsg     ctermfg=160
