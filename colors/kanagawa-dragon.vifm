@@ -1,8 +1,8 @@
-" ~/.config/vifm/colors/kanagawa-dragon.vifm
+" Kanagawa Dragon for Vifm (256-color, Windows-compatible)
 
 highlight clear
 
-" Main window
+" Main window background
 highlight Win          ctermfg=252 ctermbg=234
 
 " Cursor line
@@ -14,7 +14,7 @@ highlight TopLine      ctermfg=223 ctermbg=236
 " Status line
 highlight StatusLine   ctermfg=223 ctermbg=236
 
-" Borders
+" Borders / splits
 highlight Border       ctermfg=238 ctermbg=234
 
 " Selection
@@ -29,5 +29,5 @@ highlight Device       ctermfg=173
 highlight Fifo         ctermfg=180
 highlight Socket       ctermfg=175
 
-" Errors (this one should exist; if it errors, just delete it)
-highlight ErrorMsg     ctermfg=160
+" Errors
+highlight ErrorMsg     ctermfg=160 ctermbg=234
