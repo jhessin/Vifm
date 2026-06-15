@@ -1,4 +1,4 @@
-" Kanagawa Dragon for Vifm (256-color, Windows-compatible)
+" Kanagawa Dragon for Vifm (256-color, Windows-compatible, darker selected pane)
 
 highlight clear
 
@@ -8,17 +8,20 @@ highlight Win          ctermfg=252 ctermbg=234
 " Cursor line
 highlight CurrLine     ctermbg=236
 
-" Top bar
-highlight TopLine      ctermfg=223 ctermbg=236
+" Inactive pane path
+highlight TopLine      ctermfg=223 ctermbg=235
 
-" Status line
-highlight StatusLine   ctermfg=223 ctermbg=236
+" Active pane path (darker background)
+highlight TopLineSel   ctermfg=223 ctermbg=233
+
+" Status line (slightly lighter than TopLineSel)
+highlight StatusLine   ctermfg=223 ctermbg=237
 
 " Borders / splits
 highlight Border       ctermfg=238 ctermbg=234
 
-" Selection
-highlight Selected     ctermbg=238
+" Selection (file selection inside panes)
+highlight Selected     ctermfg=223 ctermbg=238
 
 " File types
 highlight Directory    ctermfg=109
