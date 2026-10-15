@@ -199,6 +199,7 @@ command! commit !git commit
 command! push !git push
 command! pull !git pull
 command! Clone !gh repo clone %a
+command! cmp !nvim -O %c %C
 
 " ------------------------------------------------------------------------------
 " File types association
@@ -303,14 +304,14 @@ fileviewer {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
          \ ffprobe -hide_banner -pretty %c 2>&1
 
 " Web
-filextype {*.xhtml,*.html,*.htm},<text/html>
-        \ {Open with qutebrowser}
-        \ qutebrowser %f %i,
-        \ {Open with firefox}
-        \ firefox %f &,
-       \ {Open with windows}
-       \ explorer %"f &,
-filetype {*.xhtml,*.html,*.htm},<text/html> links, lynx
+"filextype {*.xhtml,*.html,*.htm},<text/html>
+"        \ {Open with qutebrowser}
+"        \ qutebrowser %f %i,
+"        \ {Open with firefox}
+"        \ firefox %f &,
+"       \ {Open with windows}
+"       \ explorer %"f &,
+"filetype {*.xhtml,*.html,*.htm},<text/html> links, lynx
 
 " Object
 filetype {*.o},<application/x-object> nm %f | less
