@@ -238,6 +238,10 @@ command! cmp !nvim -O %c %C
 " You can also add %CLEAR if you want to clear screen before running FUSE
 " program.  There is also %FOREGROUND, which is useful for entering passwords.
 
+" TypeScript / TSX
+filetype *.ts,*.tsx
+    \ nvim %f
+
 " Pdf
 filextype {*.pdf},<application/pdf> zathura %c %i, apvlv %c, xpdf %c
        \ {Open with windows}
