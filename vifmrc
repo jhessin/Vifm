@@ -200,6 +200,8 @@ command! push !git push
 command! pull !git pull
 command! Clone !gh repo clone %a
 command! cmp !nvim -O %c %C
+command! shortcut
+    \ !powershell -NoProfile -ExecutionPolicy Bypass -Command "create-shortcut.ps1 '%"d\\%"f' '%"D'"
 
 " ------------------------------------------------------------------------------
 " File types association
