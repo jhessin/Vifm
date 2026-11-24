@@ -150,6 +150,7 @@ bmark! ~/AppData/ appdata
 "  %u uses command's output to build a file list
 "  see `:help vifm-macros` and `:help vifm-filename-modifiers` for more
 
+command! oc !opencode
 command! pdfx !"C:\Program Files\Tracker Software\PDF Editor\PDFXEdit.exe" %"f &,
 command! lg !lazygit
 command! ex !explorer %"f &,
@@ -591,7 +592,7 @@ nnoremap gd :dart<cr>
 " Interaction with system clipboard
 if has('win')
   " Yank current directory path to Windows clipboard with forward slashes
-  nnoremap yp :!echo %"d:gs!\!/! %i | clip<cr>
+  nnoremap yd :!echo %"d:gs!\!/! %i | clip<cr>
   " Yank path to current file to Windows clipboard with forward slashes
   nnoremap yf :!echo %"c:gs!\!/! %i | clip<cr>
 elseif executable('xclip')
